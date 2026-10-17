@@ -1,0 +1,51 @@
+{
+  "name": "tech-iconify",
+  "version": "0.0.1",
+  "description": "React component and lookup utility that maps Shiki/VS Code language IDs to Material Icon Theme icons",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "bun run build"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "jsdom": "^30.1.3",
+    "react-dom": "^19.3.1",
+    "tsup": "^9.0.0",
+    "typescript": "5",
+    "vitest": "^5.0.5"
+  },
+  "peerDependencies": {
+    "react": "^19.3.1"
+  },
+  "dependencies": {
+    "@iconify-json/material-icon-theme": "^1.2.72",
+    "@iconify/react": "^6.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/posroe/tech-iconify.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "tech-iconify",
+    "react",
+    "icon",
+    "tech",
+    "stack",
+    "svg",
+    "typescript",
+    "javascript",
+    "material-icon-theme",
+    "shiki",
+    "language-icon"
+  ]
+}
