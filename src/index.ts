@@ -186,13 +186,14 @@ for (const { keywords, icon } of icons) {
 }
 
 /** Look up an icon by a Shiki language id / alias (case-insensitive). */
-export function getTechIcon(keyword: string): IconComponent | undefined {
+export function getTechIcon(keyword: string | undefined): IconComponent | undefined {
+    if (!keyword) return undefined;
     return iconMap.get(keyword.toLowerCase());
 }
 
 export interface TechIconifyProps extends IconProps {
     /** Shiki language id / alias, e.g. "ts", "python", "dockerfile" */
-    keyword: string;
+    keyword: string | undefined;
     /** Rendered when no icon matches `keyword` */
     children?: ReactNode;
 }
